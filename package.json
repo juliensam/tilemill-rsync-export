@@ -1,0 +1,9 @@
+{
+    "name": "tilemill-project-rsync",
+    "description": "rsync projects to other server(s)",
+    "version": "0.1.0",
+    "engines": {
+    "tilemill": "~0.10"
+    },
+    "keywords": ["tilemill"]
+}

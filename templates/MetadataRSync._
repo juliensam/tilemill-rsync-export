@@ -1,0 +1,20 @@
+<% var get = _(project.get).bind(project); %>
+<div class='fill-w' id='meta-map'>
+  <div class='zoom-display'>Zoom <span class='zoom'></span></div>
+</div>
+
+<form><ul class='form fill-e scrolling'>
+  <li class='text'>
+    <h2><%= title %></h2>
+
+    <div class='syncHelp'>
+      The project will be sync'ed to all the production servers configured in the configuration file located in /etc/tilemill/tilemill.config
+      <pre><%= config.attributes.rsync %></pre>
+      <input type='hidden' name='filename' value='<%=project.id%>' size='-1' />
+    </div>
+  </li>
+  <li class='buttons'>
+    <input type='submit' value='Next' />
+    <input type='button' value='Cancel' class='cancel' />
+  </li>
+</ul></form>
